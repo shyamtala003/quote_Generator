@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="heading">Quotes of the day</h1>
+        <p id="quotes__container">
+            <img src="./images/quate.png" alt="" class="quate__img">
+            <span id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora blanditiis, ullam
+                ratione at alias praesentii sapiente.
+            </span><img src="./images/quate.png" alt="" class="quate__img">
+
+            <p id="autor">-- Shyam Tala</p>
+            <p class="made__with">Made With ❤️ India</p>
+            <div class="bottom">
+                <div class="btn__group">
+                    <button class="btn" onclick="textToSpeech()"><ion-icon name="volume-medium-outline"></ion-icon></button>
+                    <button class="btn" onclick="copyToClipboard()"><ion-icon name="clipboard-outline"></ion-icon></button>
+                    <button class="btn"><ion-icon name="logo-twitter"></ion-icon></button>
+                </div>
+                <button id="generate__qt" onclick="generateQuotes()">New Quote</button>
+
+            </div>
+        </p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
