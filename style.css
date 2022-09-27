@@ -41,7 +41,6 @@ body {
     white-space: nowrap;
     background-color: rgba(40, 17, 27, 0.75);
     transition: all .5s;
-    z-index: 11;
 }
 
 .showMsg
@@ -49,12 +48,14 @@ body {
     top: 10%;
     left: 50%;
     translate: -50% 0%;
+    z-index: 2;
 }
 
 .hideMsg
 {
     top: -10%;
     left: 50%;
+    z-index: 2;
 }
 
 .card {
@@ -73,6 +74,7 @@ body {
     background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 1;
 }
 
 .heading
