@@ -41,6 +41,7 @@ body {
     white-space: nowrap;
     background-color: rgba(40, 17, 27, 0.75);
     transition: all .5s;
+    z-index: 11;
 }
 
 .showMsg
