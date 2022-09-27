@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="msg" class="show">quote copied</div>
     <div class="card">
         <h1 class="heading">Quotes of the day</h1>
         <p id="quotes__container">
@@ -18,13 +19,19 @@
                 ratione at alias praesentii sapiente.
             </span><img src="./images/quate.png" alt="" class="quate__img">
 
-            <p id="autor">-- Shyam Tala</p>
+            <p id="author">-- Shyam Tala</p>
             <p class="made__with">Made With ❤️ India</p>
             <div class="bottom">
                 <div class="btn__group">
-                    <button class="btn" onclick="textToSpeech()"><ion-icon name="volume-medium-outline"></ion-icon></button>
-                    <button class="btn" onclick="copyToClipboard()"><ion-icon name="clipboard-outline"></ion-icon></button>
-                    <button class="btn"><ion-icon name="logo-twitter"></ion-icon></button>
+                    <button class="btn" onclick="textToSpeech()">
+                        <ion-icon name="volume-medium-outline"></ion-icon>
+                    </button>
+                    <button class="btn copy__to_clipboard"  data-clipboard-target="#quote">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </button>
+                    <a  href="https://twitter.com/intent/tweet?text=Hello%20world" class="btn" id="twitter__btn">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
                 </div>
                 <button id="generate__qt" onclick="generateQuotes()">New Quote</button>
 
@@ -33,7 +40,8 @@
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="dist/clipboard.min.js"></script>
     <script src="./main.js"></script>
 </body>
 
